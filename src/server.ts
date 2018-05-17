@@ -20,7 +20,7 @@
      res.status(404).send('Not Found');
  });
 
- app.listen(SERVER_PORT,()=>{
+ app.listen(process.env.PORT || 8000,()=>{
      console.log("Server is running at http://localhost:8000");
      
  });
